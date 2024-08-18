@@ -9,16 +9,26 @@
   <body>
     <!-- header row with logo -->
     <div class="header">
-        <img id="tentacles" src="assets/tentacles.png">
-        <h1 class="header-text">Sea Monster Crowdfunding</h1>
+        <!-- <img id="tentacles" src="assets/tentacles.png">
+        <h1 class="header-text">Sea Monster Crowdfunding</h1> -->
+        <ul>
+            <li><img id="tentacles" src="assets/tentacles.png"></li>
+            <li><h1 class="header-text">Sea Monster Crowdfunding</h1></li>
+            <div id="nav">
+                <li><a href="#about"><b>About Us</b></a></li>
+                <li><a href="#our-games"><b>Our Games</b></a></li>
+                <li><a href="#donation-form"><b>Donate</b></a></li>
+            </div>
+          </ul>
     </div>
 
     <!-- background info about company -->
-    <h2>Welcome to Sea Monster!</h2>
+    <h2 id="about">Welcome to Sea Monster!</h2>
     <div id="description-container">
         <p>The purpose of our company is to fund independent games. We've been in operation for 12 years.</p>
     </div>
 
+    <br>
     <!-- top games & other interesting stats -->
     <h2>Stats</h2>
     <div class="stats-container">
@@ -47,17 +57,81 @@
         </div>
     </div>
 
+    <br>
     <!-- list of games funded by Sea Monster -->
-    <h2>Our Games</h2>
+    <h2 id="our-games">Our Games</h2>
     <p>Check out each of our games below!</p>
     <div id="button-container">
-        <button id="unfunded-btn">Show Unfunded Only</button>
-        <button id="funded-btn">Show Funded Only</button>
-        <button id="all-btn">Show All Games</button>
+        <button id="unfunded-btn" class="filter-button">Show Unfunded Only</button>
+        <button id="funded-btn" class="filter-button">Show Funded Only</button>
+        <button id="all-btn" class="filter-button">Show All Games</button>
     </div>
     <div id="games-container">
 
     </div>
+
+    <br>
+
+    <div id="donation-form" class="form-div">
+        <h2>Donate Here</h2>
+        <form id="donate-form">
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" placeholder="Enter your full name" id="name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Company Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" placeholder="Enter your company name" id="companyName">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Email Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" placeholder="Enter your email address" id="email">
+                    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="gameSelector">Game you wish to fund</label>
+                </div>
+                <div class="col-75" id="gameSelector">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="amount">Amount</label>
+                </div>
+                <div class="col-75" id="amt">
+                    <span>$</span>
+                    <input type="number" min="1" step="1" id="fund-amount" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <button type="submit" class="submitButton" >Submit
+                </div>
+                
+            </div>
+        </form>
+    </div>
+
+    <br><br>
+    
 
     <script type="module" src="index.js"></script>
   </body>
