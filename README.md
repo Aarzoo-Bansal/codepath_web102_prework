@@ -34,7 +34,7 @@ Here's a walkthrough of implemented features:
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with **Gifski**. 
-I created the screen recording in mp4 file using the **screen recording option on mac** and then converted that video to gif using **Gifski**.
+I created the screen recording in mp4 file format using the **screen recording option on mac** and then converted that video to gif using **Gifski**.
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
