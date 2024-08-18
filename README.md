@@ -23,15 +23,14 @@ The following **optional** features are implemented:
 * [x] Donation form is created, which allows user to enter details and fund any games they like. UI have been completed. 
 
 ## Future Scope
-* [] The donation form created captures the information and make real-time updates.
+* [ ] The donation form created captures the information and make real-time updates.
 
-  
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/a/b7KcGOi' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='../codepath_web102_prework/Aarzoo_Bansal-Codepath-Web102_Prework.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  I created the screen recording in mp4 file using the **screen recording option on mac** and then converted that video to gif using **Gifski**.
